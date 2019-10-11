@@ -1,0 +1,56 @@
+{
+  "name": "comma-enter",
+  "displayName": "Comma Enter",
+  "description": "Append a comma to the end of the current line and create new line in next line.",
+  "version": "0.0.1",
+  "icon": "images/icon.png",
+  "publisher": "likun",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitHber/vscode-ext-comma-enter"
+  },
+  "engines": {
+    "vscode": "^1.39.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.commaEnter"
+  ],
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.commaEnter",
+        "title": "Comma Enter"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.commaEnter",
+        "key": "shift+enter",
+        "mac": "shift+enter",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.39.0",
+    "glob": "^7.1.4",
+    "mocha": "^6.1.4",
+    "typescript": "^3.3.1",
+    "tslint": "^5.12.1",
+    "vscode-test": "^1.2.0"
+  }
+}
