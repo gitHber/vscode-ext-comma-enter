@@ -2,7 +2,7 @@
   "name": "comma-enter",
   "displayName": "Comma Enter",
   "description": "Append a comma to the end of the current line and create new line in next line.",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "icon": "images/icon.png",
   "publisher": "likun",
   "repository": {
