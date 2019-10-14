@@ -5,3 +5,5 @@ append a comma to the end of the current line and create new line in next line.
 ## Usage
 The default keybinding is "shift+enter".  
 快捷键 "shift+enter"
+
+![image](./images/guide.gif)
